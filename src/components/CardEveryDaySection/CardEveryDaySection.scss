@@ -1,0 +1,24 @@
+.cardEveryDaySection {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	margin-top: 30px;
+	h3 {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 24px;
+	}
+
+	&__grid {
+		width: 100%;
+		display: flex;
+		gap: 20px;
+		overflow-x: scroll;
+    padding: 5px;
+		&::-webkit-scrollbar {
+			border: 1px solid #fff;
+			cursor: pointer;
+		}
+	}
+}

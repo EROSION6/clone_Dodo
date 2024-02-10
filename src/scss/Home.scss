@@ -1,0 +1,11 @@
+.home{
+	width: 1440px;
+	display: flex;
+	flex-direction: column;
+  padding: 0 20px;
+	overflow: hidden;
+
+	@media (max-width: 1440px) {
+		width: 100%;
+	}
+}

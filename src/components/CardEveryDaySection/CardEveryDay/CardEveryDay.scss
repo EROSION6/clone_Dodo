@@ -1,0 +1,35 @@
+.cardEveryDay {
+	display: flex;
+	align-items: center;
+	background: rgb(255, 255, 255);
+	border-radius: 12px;
+	display: flex;
+	flex: 0 0 auto;
+	gap: 20px;
+	cursor: pointer;
+	width: 260px;
+	padding: 16px;
+	margin-right: 24px;
+
+	&__left {
+		width: 100px;
+		height: 90px;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	&__right {
+		h2 {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+		}
+		b {
+			font-size: 16px;
+			font-weight: 900;
+			color: #000;
+		}
+	}
+}

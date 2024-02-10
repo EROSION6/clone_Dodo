@@ -1,0 +1,32 @@
+.counter {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		border: 2.3px solid #ff6900;
+		cursor: pointer;
+    background: none;
+	}
+	b {
+		font-size: 24px;
+	}
+
+	@media (max-width: 768px) {
+		button {
+			img {
+				width: 20px;
+				height: 20px;
+			}
+		}
+		b {
+			font-size: 16px;
+		}
+	}
+
+  
+}

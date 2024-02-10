@@ -1,0 +1,84 @@
+.cardCartSection {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	border: 1px solid #c5c5c5;
+	border-radius: 24px;
+	justify-content: space-between;
+	padding: 10px;
+
+	&__title {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		&__img {
+			width: 130px;
+			height: 130px;
+		}
+		&__info {
+			h3 {
+				font-size: 24px;
+				font-weight: 700;
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+		gap: 25px;
+
+		b {
+			font-size: 18px;
+		}
+
+		button {
+			outline: none;
+			border: none;
+			cursor: pointer;
+			img {
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+	@media (max-width: 769px) {
+		&__title {
+			&__info {
+				h3 {
+					font-size: 16px;
+				}
+				p {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 425px) {
+		width: 100%;
+		&__title {
+			&__img {
+				width: 100px;
+				height: 100px;
+			}
+			&__info {
+				h3 {
+					font-size: 14px;
+				}
+				p {
+					font-size: 12px;
+				}
+			}
+		}
+		&__info {
+			button {
+				img {
+					width: 30px;
+					height: 30px;
+				}
+			}
+		}
+	}
+}

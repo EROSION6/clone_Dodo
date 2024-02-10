@@ -1,0 +1,24 @@
+.orangeButton,
+.grayButton {
+	padding: 10px 16px;
+	font-size: 16px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 8rem;
+	border-radius: 28px;
+	cursor: pointer;
+}
+
+.orangeButton {
+	background-color: rgb(255, 105, 0);
+	color: rgb(255, 255, 255);
+	border: none;
+}
+
+.grayButton {
+	border: 1px solid rgb(194, 187, 187);
+	color: rgb(255, 105, 0);
+	background: none;
+}
