@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom"
 import NavBar from "./components/Navbar/NavBar"
-import Home from "./pages/Home"
-import NotFoundPage from "./pages/NotFoundPage.jsx"
+import Home from "./pages/Home/Home.jsx"
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage.jsx"
 import Footer from "./components/Footer/Footer.jsx"
-import CartPage from "./pages/CartPage.jsx"
+import CartPage from "./pages/CartPage/CartPage.jsx"
 
 function App() {
 	return (

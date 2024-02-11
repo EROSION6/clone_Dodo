@@ -1,9 +1,9 @@
-import CartSection from "../components/CartSection/CartSection"
-import "../scss/CartPage.scss"
-import carts from "../assets/cart-shopping-svgrepo-com.svg"
-import trash from "../assets/trash-svgrepo-com.svg"
+import CartSection from "../../components/CartSection/CartSection"
+import "./CartPage.scss"
+import carts from "../../assets/cart-shopping-svgrepo-com.svg"
+import trash from "../../assets/trash-svgrepo-com.svg"
 import { useDispatch } from "react-redux"
-import { clearPizza } from "../store/sliceCart"
+import { clearPizza } from "../../store/sliceCart"
 
 const CartPage = () => {
 	const dispatch = useDispatch()

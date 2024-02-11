@@ -1,7 +1,7 @@
 import React from "react";
 import "./CardEveryDaySection.scss";
 import { CardEveryDay } from "./CardEveryDay/CardEveryDay";
-import { everyDayCard } from "../../date/EveryDayCard";
+import { everyDayCard } from "../../data/EveryDayCard";
 
 const CardEveryDaySection = () => {
 	return (

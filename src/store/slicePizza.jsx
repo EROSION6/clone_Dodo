@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { items } from '../date/Cards';
+import { items } from '../data/Cards';
 
 const initialState = {
   pizza: items,

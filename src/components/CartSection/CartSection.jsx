@@ -1,13 +1,17 @@
-import "./CartSection.scss"
-import { useSelector } from "react-redux"
-import { CardCartSection } from "./CardCartSection/CardCartSection"
-import { Button } from "../../UI/Button/Button"
-import { useNavigate } from "react-router-dom"
+import { useSelector } from 'react-redux'
+import { useNavigate } from 'react-router-dom'
+import { Button } from '../../UI/Button/Button'
+import { CardCartSection } from './CardCartSection/CardCartSection'
+import './CartSection.scss'
 
 const CartSection = () => {
 	const { cart, totalPrice } = useSelector(state => state.cart)
 	const totalCount = cart.reduce((sum, item) => item.count + sum, 0)
 	const navigate = useNavigate()
+
+	const handleSubmittedCarts = () => {
+		navigate('/')
+	}
 
 	return (
 		<>
@@ -26,17 +30,19 @@ const CartSection = () => {
 			</div>
 			<div className='price__btn'>
 				<Button
-					onClick={() => navigate("/")}
+					onClick={() => navigate('/')}
 					className='price__btn__exit'
-					variant='gray'>
+					variant='gray'
+				>
 					Вернуться
 				</Button>
 				<Button
-					// onClick={onClickNavigate}
+					onClick={handleSubmittedCarts}
 					style={{
-						width: "100%",
+						width: '100%',
 					}}
-					variant='orange'>
+					variant='orange'
+				>
 					Оплатить
 				</Button>
 			</div>

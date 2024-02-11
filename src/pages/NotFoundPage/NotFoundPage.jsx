@@ -1,7 +1,6 @@
-import React from "react";
-import { Button } from "../UI/Button/Button";
-import "../scss/NotFoundPage.scss";
-import pizza from "../assets/pizza-svgrepo-com.svg";
+import { Button } from "../../UI/Button/Button";
+import "./NotFoundPage.scss";
+import pizza from "../../assets/pizza-svgrepo-com.svg";
 import { useNavigate } from "react-router-dom";
 
 const NotFoundPage = () => {

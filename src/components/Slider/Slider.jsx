@@ -11,7 +11,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { slidersUrl } from "../../date/SliderUrl";
+import { slidersUrl } from "../../data/SliderUrl";
 
 const Slider = () => {
 	return (
